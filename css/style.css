@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.create-account-body {
+  background-color: #f6f6fa;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+/* start signUp-left */
+.name,
+.email,
+.reason,
+.pass {
+  padding: 15px 0;
+}
+label {
+  color: #344054;
+  padding-bottom: 10px;
+}
+.register {
+  width: 100%;
+  height: 54px;
+  color: white;
+  background-color: #6a55ff;
+}
+.register:hover {
+  color: white;
+  background-color: #6a55ff;
+}
+.google {
+  margin-top: 10px;
+  border: #dfe3e7 solid 1px;
+  width: 100%;
+}
+.google:hover {
+  background-color: white;
+}
+a {
+  color: #6a55ff;
+  text-decoration: none;
+}
+/* end signUp-left */
+
+/* start signUp-right */
+.signUp-right {
+  padding: 10%;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #4b5476, #5c55c2);
+  color: white;
+}
+.signUp-right h1 {
+  font-size: 40px;
+}
+.signUp-right p {
+  padding: 10% 0;
+  font-size: 15px;
+}
+.signUp-right h6 {
+  font-size: 20px;
+}
+.hand-drawn {
+  position: absolute;
+  width: 280.77px;
+  top: 520px;
+  left: -100px;
+}
+
+.hand-drawn2 {
+  position: absolute;
+  width: 280.77px;
+  top: 440px;
+  left: -131px;
+}
+@media (max-width: 992px) {
+  .hand-drawn {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .hand-drawn2 {
+    display: none;
+  }
+}
+/* end signUp-right */
+/* start create account */
+nav {
+  background-color: white;
+}
+.create-account-nav {
+  height: 107px;
+}
+.createAcc {
+  margin: auto;
+  background-color: #f6f6fa;
+}
+.researcher,
+.participant {
+  border: 2px white solid;
+  border-radius: 10px;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.createAcc img {
+  min-height: 50%;
+  max-height: 250px;
+  max-width: 80%;
+}
+section p {
+  font-size: 10px;
+}
+.participant:hover,
+.researcher:hover {
+  box-shadow: 0 16px 32px rgba(12, 22, 61, 0.1);
+  background-color: #e9e6ff;
+  border: #212280 2px solid;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator .line {
+  height: 3px;
+  flex: 1;
+  background-color: white;
+}
+
+.separator h6 {
+  color: #9595a0;
+  padding: 0 0.5rem;
+}
+/* end create account */
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+.openModal {
+  display: flex;
+}
+.closeModal {
+  display: none;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#form {
+  max-width: 240px;
+  margin: 25px auto 0;
+}
+.modal input {
+  margin: 0 5px;
+  text-align: center;
+  border: solid 2px #6a55ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  &:focus {
+    border-color: purple;
+    box-shadow: 0 0 5px purple inset;
+  }
+  &::selection {
+    background: transparent;
+  }
+}
+
+/* end of modal */
+/* Remove the increment arrow for number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

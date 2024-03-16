@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afakar - SignIn</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="w-auto">
+
+    <section class="signUp d-flex row">
+        <div class="signUp-left col-lg-6 col-md-12 col-sm-12">
+            <div class="col-8  m-auto">
+                <img src="images/Afakar 1.png " width="170px" class=" pb-5">
+                <h2>Welcome back</h2>
+                <p>Welcome back! Please enter your details.</p>
+                <form>
+                    <div class="form container-fluid">
+                        <div class="name">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" placeholder=" Enter your Name"
+                                class="form-control ">
+                        </div>
+                        <div class="pass">
+                            <label for="password">Password *</label>
+                            <input type="password" id="confirm_password" name="confirm_password"
+                                placeholder=" Create a password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                class="form-control ">
+                        </div>
+                        <p>Must be at least 8 characters</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="col-lg-6 col-md-10 col-sm-8">
+                                <input type="checkbox" id="check" class="">
+                                <label for="check" class="col-lg-10 col-md-10 col-sm-10"> Remember for 30
+                                    days</label>
+                            </div>
+                            <div>
+                                <a href="#" class="text-decoration-none" style="color: #6a55ff;"> Forgot
+                                    password</a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn  register" width="40px">Get Started</button>
+                        <button type=" button" class="btn btn-light google"> <img src="images/googlr.png" width="40px"
+                                alt="">Sign up
+                            with Google</button>
+                    </div>
+                    <div class="text-center already pt-3">
+                        <h6 class="">Don’t have an account ? <span> <a href="signUp.html" target="_blank"> Sign
+                                    Up</a> </span>
+                        </h6>
+                        <h6>Are you a participant ? <span> <a href="signUp.html" target="_blank"> Sign Up</a> </span>
+                        </h6>
+                    </div>
+                </form>
+            </div>
+            <div class=" footer d-flex justify-content-between pt-5 container-fluid">
+                <p>© Afakar 2023</p>
+                <p><i class="fa-regular fa-envelope"></i> help@afakar.com</p>
+            </div>
+        </div>
+        <div class="signUp-right col-lg-6 col-md-12 col-sm-12 h-auto position-relative">
+            <div class="container">
+                <img src="images/Stars.png" alt="">
+                <h1 class="text-center">
+                    Start turning your ideas into reality.
+                </h1>
+                <p class="text-center">Craete a free account and get full access to all features for 30-days. No credit
+                    card needed . Get
+                    start in 2 minutes. </p>
+                <div class="members d-flex justify-content-center">
+                    <img src=" images/Avatar group.png" alt="">
+                    <h6 class="p-2">Join 4,000 Researches</h6>
+                </div>
+            </div>
+            <img src="images/Hand-drawn arrow.png" alt="" class="hand-drawn2">
+        </div>
+    </section>
+</body>
+
+</html>

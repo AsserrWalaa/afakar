@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check your email</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-center ">
+    <section class="pt-5 check-mail">
+        <img src="images/Featured icon (1).png" alt="" class="  ">
+        <h1 class="pt-5 pb-3">Check your email</h1>
+        <P class="pb-3 fs-5">We sent a password reset link to <br> darwish@gmail.com</P>
+        <button type="button" class="btn register w-25 p-1" onclick="openModal()">Open email app</button>
+        <div class="pb-3 d-flex ">
+            <h6 class="text-center container pt-3 "> Didn’t receive the email ? <span>
+                    <a href="signIn.html" target="_blank">Click to resend</a>
+                </span></h6>
+        </div>
+        <section class="forgotpw text-center pt-5">
+            <div class="text-center back">
+                <h6 class="pt-2">
+                    <i class="fa-solid fa-left-long text-dark"></i></i> <a href="signIn.html" target="_blank"
+                        class="text-decoration-none text-dark"> Back to login</a>
+                </h6>
+            </div>
+            </form>
+        </section>
+        <!-- modal -->
+        <div id="myModal" class="modal text-center align-items-center justify-content-center">
+            <div class="modal-content text-center">
+                <span class="close text-end " onclick="closeModal()">&times;</span>
+                <img src="images/Featured icon (1).png" alt="" class="mx-auto d-block" width="100px">
+                <h5>Please check your email.</h5>
+                <h6>We've sent a code to darwish@gmail.com</h6>
+                <div id="form" class="d-flex justify-content-center col-md-12 co-sm-12">
+                    <input type="number" maxlength="1" class="input" />
+                    <input type="number" maxlength="1" class="input" />
+                    <input type="number" maxlength="1" class="input" />
+                    <input type="number" maxlength="1" class="input" />
+                    <!-- Add your email app content here -->
+                </div>
+                <div class="pb-3 -flex ">
+                    <h6 class="text-center container pt-3 "> Didn’t receive the email ? <span>
+                            <a href="signIn.html" target="_blank">Click to resend</a>
+                        </span></h6>
+                </div>
+                <div class="verify -flex text-center justify-content-center">
+                    <button type="button"
+                        class="btn btn-ligh border-secondary w-25 m-2 close text-end fs-5 text-center text-dark"
+                        onclick="closeModal()">Cancel</button>
+                    <button type="button" class="btn text-light m-2 w-25"
+                        style="background-color: #212280;">Verify</button>
+                </div>
+            </div>
+        </div>
+        <!-- end modal -->
+    </section>
+</body>
+<script src="js/script.js"></script>
+
+</html>
